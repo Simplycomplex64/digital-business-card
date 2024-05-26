@@ -69,24 +69,31 @@ body {
     gap: 20px;
 }
 
+.my-buttons-container a {
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
 .my-buttons-container button {
     height: 38px;
     width: 120px;
     display: flex;
+    font-size: 15px;
     align-items: center;
     justify-content: center;
     gap: 10px;
     border-radius: 7px;
     border: none;
-    transition: 0.2s ease-in-out;
+    font-family: "Inter", sans-serif;
 }
 
-.my-buttons-container button:first-child:hover {
+.my-buttons-container a:first-child:hover {
     background-color: #cacaca;
     color: rgb(33, 33, 33);
     cursor: pointer;
-    box-shadow: 0 0 10px white;
-    transform: scale(1.08);
+    box-shadow: 0 0 10px #5093E2;
+    transform: scale(1.1);
+    border-radius: 10px;
 }
 
 .my-buttons-container button p {
@@ -97,18 +104,18 @@ body {
 
 .linkedIn-btn {
     background-color: #5093E2;
-    font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 15px;
     color: white;
+    transition: 0.2s ease-in-out;
 }
 
 .linkedIn-btn:hover {
     background-color: #23252C;
     color: #FFFFFF;
     cursor: pointer;
-    box-shadow: 0 0 10px white;
-    transform: scale(1.08);
+    box-shadow: 0 0 10px rgb(170, 170, 170);
+    transform: scale(1.04);
 }
 
 .my-buttons-container button img {
@@ -152,8 +159,17 @@ body {
 }
 
 .footer-section-container img{
- width: 23px;   
+ width: 25px; 
+ transition: 0.2s ease-in-out;  
 }
+
+.footer-section-container img:hover{
+    transform: scale(1.4);
+    box-shadow: 0 0 5px #F3BF99;  
+    border-radius: 50%; 
+    border: 2px solid #F3BF99;
+    cursor: pointer;
+   }
 
 .about-interest {
     height: auto;
